@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 
 public class GameDataMgr
@@ -15,13 +17,19 @@ public class GameDataMgr
     public RankData rankData;
     public RoleData roleData;
     public int nowSelHeroIndex = 0;     //当前选择的角色编号
+    //子弹数据
+    public BulletData bulletData;
 
     private GameDataMgr()   //加载以初始化数据
     {
         
         musicData = XmlDataMgr.Instance.LoadData(typeof(MusicData), "MusicData") as MusicData;
         rankData = XmlDataMgr.Instance.LoadData(typeof(RankData), "RankData") as RankData;
+        bulletData = XmlDataMgr.Instance.LoadData(typeof(BulletData), "BulletData") as BulletData;
         roleData = XmlDataMgr.Instance.LoadData(typeof(RoleData), "RoleData") as RoleData;
+        
+        
+        
     }
 
     #region 音乐数据相关方法

@@ -32,4 +32,5 @@ public class RankItem :MonoBehaviour
         labtime.text = str;
         
     }
+    
 }

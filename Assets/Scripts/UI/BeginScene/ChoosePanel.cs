@@ -51,7 +51,7 @@ public class ChoosePanel : BasePanel<ChoosePanel>
         HideMe();
     }
     /// <summary>
-    /// 切换当前选择的飞船
+    /// 切换当前选择的飞船模型
     /// </summary>
     private void ChangeNowHero()
     {
