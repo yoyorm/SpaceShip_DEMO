@@ -15,6 +15,8 @@ public class BKMusic : MonoBehaviour
         //初始化音乐组件
         SetBKMusicIsOpen(GameDataMgr.Instance.musicData.musicOpen);
         SetBKMusicVolume(GameDataMgr.Instance.musicData.musicVolume);
+        
+        DontDestroyOnLoad(gameObject);
     }
     
     public void SetBKMusicIsOpen(bool isOpen)

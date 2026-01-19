@@ -19,6 +19,7 @@ public class GameDataMgr
     public int nowSelHeroIndex = 0;     //当前选择的角色编号
     //子弹数据
     public BulletData bulletData;
+    public FireData fireData;
 
     private GameDataMgr()   //加载以初始化数据
     {
@@ -27,7 +28,7 @@ public class GameDataMgr
         rankData = XmlDataMgr.Instance.LoadData(typeof(RankData), "RankData") as RankData;
         bulletData = XmlDataMgr.Instance.LoadData(typeof(BulletData), "BulletData") as BulletData;
         roleData = XmlDataMgr.Instance.LoadData(typeof(RoleData), "RoleData") as RoleData;
-        
+        fireData = XmlDataMgr.Instance.LoadData(typeof(FireData), "FireData") as FireData;
         
         
     }

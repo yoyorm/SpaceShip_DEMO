@@ -62,9 +62,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5703148619420483574}
     m_Modifications:
+    - target: {fileID: 100000, guid: 26c4f5111f4adc74ea88ce3d5388f6e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 26c4f5111f4adc74ea88ce3d5388f6e5, type: 3}
       propertyPath: m_Name
       value: LightningDome
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 26c4f5111f4adc74ea88ce3d5388f6e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 26c4f5111f4adc74ea88ce3d5388f6e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 26c4f5111f4adc74ea88ce3d5388f6e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 140828, guid: 26c4f5111f4adc74ea88ce3d5388f6e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 155406, guid: 26c4f5111f4adc74ea88ce3d5388f6e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 186552, guid: 26c4f5111f4adc74ea88ce3d5388f6e5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 26c4f5111f4adc74ea88ce3d5388f6e5, type: 3}
       propertyPath: m_LocalScale.x

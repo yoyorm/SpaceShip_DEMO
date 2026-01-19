@@ -62,6 +62,19 @@ public class PlayerObject : MonoBehaviour
          //保持区域
          AeraLimit();
       }
+
+      if (Input.GetMouseButtonDown(0))
+      {
+         RaycastHit hitInfo;
+         if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hitInfo, 1000)) ;
+         {
+            BulletObject bullet = hitInfo.transform.GetComponent<BulletObject>();
+            if (bullet != null)
+            {
+               bullet.Dead();
+            }
+         }
+      }
    }
 
    public void Dead()      //角色死亡

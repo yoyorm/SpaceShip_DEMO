@@ -1,6 +1,8 @@
 
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class BulletObject : MonoBehaviour
 {
@@ -15,7 +17,7 @@ public class BulletObject : MonoBehaviour
 
     private void DealyDestroy()
     {
-        Destroy(gameObject);
+        Dead();
     }
 
     // private void Start()
@@ -35,6 +37,10 @@ public class BulletObject : MonoBehaviour
         Destroy(effobj, 1f);
     }
 
+
+    
+    
+    
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -75,5 +81,6 @@ public class BulletObject : MonoBehaviour
 
                 
         }
+        
     }
 }
